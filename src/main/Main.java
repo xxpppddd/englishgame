@@ -1,4 +1,4 @@
-package org;
+package main;
 
 import Quiz.Game1;
 
