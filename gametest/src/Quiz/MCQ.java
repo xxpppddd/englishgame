@@ -55,14 +55,14 @@ public class MCQ extends JFrame {
     public void checkAnswer(String playersAnswer) {
         if (Objects.equals(playersAnswer, correctAnswer)) {
             setResult("  Correct");
-            sound.SoundPlay.playSoundNonReset("C:\\Users\\DELL\\Documents\\GitHub\\englishgame\\gametest\\sound\\money_sound.wav");
+            sound.SoundPlay.playSoundNonReset("sound/money_sound.wav");
             resultPanel.setBackground(new Color(204, 239, 27));
             score += 10;
             Score.setText("Score: " + score + "  ");
 
         } else {
             setResult("  Game over! The correct answer is " + correctAnswer + ".");
-            sound.SoundPlay.playSoundNonReset("C:\\Users\\DELL\\Documents\\GitHub\\englishgame\\gametest\\sound\\explosion2.wav");
+            sound.SoundPlay.playSoundNonReset("sound/explosion2.wav");
             resultPanel.setBackground(Color.RED);
             NEXTButton.setVisible(false);
             displayGameOver();
