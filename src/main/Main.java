@@ -1,11 +1,14 @@
 package main;
+import Quiz.*;
+import Hangman.*;
 
-import Quiz.Game1;
+import javax.swing.*;
+import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        new Game1();
-        sound.SoundPlay.playSoundReset("sound/game_audio.wav");
+        new Hangman().setVisible(true);
+        sound.SoundPlay.playSoundReset("sound/girlfront.wav");
     }
 }

@@ -55,14 +55,14 @@ public class MCQ extends JFrame {
     public void checkAnswer(String playersAnswer) {
         if (Objects.equals(playersAnswer, correctAnswer)) {
             setResult("  Correct");
-            sound.SoundPlay.playSoundNonReset("sound/money_sound.wav");
+            sound.SoundPlay.playSoundNonReset("sound/correct.wav");
             resultPanel.setBackground(new Color(204, 239, 27));
             score += 10;
             Score.setText("Score: " + score + "  ");
 
         } else {
             setResult("  Game over! The correct answer is " + correctAnswer + ".");
-            sound.SoundPlay.playSoundNonReset("sound/explosion2.wav");
+            sound.SoundPlay.playSoundNonReset("sound/nani.wav");
             resultPanel.setBackground(Color.RED);
             NEXTButton.setVisible(false);
             displayGameOver();
@@ -95,7 +95,7 @@ public class MCQ extends JFrame {
         score = 0;
         Score.setText("Score: 0  ");
         setContentPane(panel1);
-        setTitle("Dictionary EV");
+        setTitle("Quiz");
         setSize(900, 700);
         setLocationRelativeTo(null);
         resultPanel.setVisible(false);
